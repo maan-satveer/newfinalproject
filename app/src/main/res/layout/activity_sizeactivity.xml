@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_marginTop="30dp"
+    tools:context=".sizeactivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name :"
+            android:textSize="20dp"
+            android:textColor="#BA041F"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/pizzaname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="name"
+        android:id="@+id/bkname"
+        android:gravity="center"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="mobile num"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:id="@+id/bkcontact"
+        android:gravity="center"/>
+
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/bksize"></Spinner>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="price"
+        android:id="@+id/price"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="address"
+        android:id="@+id/bkaddress"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/ukbook"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Continue to pay"
+        android:onClick="Bookitem"
+        android:background="@drawable/btn_shape"
+        android:textColor="#fff"/>
+
+</LinearLayout>
